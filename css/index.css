@@ -1,0 +1,377 @@
+body {
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+    color: #000;
+    background: #f2f2f2;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+
+/* 搜索开始 */
+
+.search-index {
+    z-index: 1000;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 540px;
+    min-width: 320px;
+    height: 49px;
+    background-color: #F6F6F6;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+
+/* 旧版样式 */
+
+
+/* .search {
+    position: relative;
+    flex: 1;
+    border: 1px solid #ccc;
+    color: #666;
+    height: 26px;
+    line-height: 24px;
+    font-size: 12px;
+    margin: 7px 10px;
+    padding-left: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+} */
+
+.search {
+    margin-top: 5px;
+    padding-left: 30px;
+    flex: 1;
+    height: 32px;
+    border-radius: 16px;
+    border: 1.8px solid #0086f6;
+    color: #999999;
+    font-size: 16px;
+    align-items: center;
+}
+
+.search::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    background: url(../images/sprite.png) no-repeat -59px -279px;
+    background-size: 104px auto;
+}
+
+.user {
+    width: 44px;
+    height: 44px;
+    font-size: 12px;
+    text-align: center;
+    color: #2eaae0;
+}
+
+.user::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url(../images/sprite.png) no-repeat -59px -194px;
+    background-size: 104px auto;
+    margin: 4px auto -2px;
+}
+
+
+/* 搜索结束 */
+
+
+/* 轮播开始 */
+
+.banner {
+    padding-top: 49px;
+}
+
+.banner img {
+    width: 100%;
+    border-style: none;
+}
+
+
+/* 轮播结束 */
+
+
+/* 导航开始 */
+
+.nav-top {
+    display: flex;
+    height: 64px;
+    margin: 3px 0;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.nav-top li {
+    flex: 1;
+}
+
+.nav-top a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+}
+
+.nav-top li [class^="local-nav-icon"] {
+    width: 32px;
+    height: 32px;
+    margin-top: 8px;
+    background: url(../images/localnav_bg.png) no-repeat 0 0;
+    background-size: 32px auto;
+}
+
+.nav-top li .local-nav-icon-icon2 {
+    background-position: 0 -32px;
+}
+
+.nav-top li .local-nav-icon-icon3 {
+    background-position: 0 -64px;
+}
+
+.nav-top li .local-nav-icon-icon4 {
+    background-position: 0 -96px;
+}
+
+.nav-top li .local-nav-icon-icon5 {
+    background-position: 0 -128px;
+}
+
+.nav {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.nav-common {
+    height: 88px;
+    display: flex;
+}
+
+.nav-common:nth-child(2) {
+    margin: 3px 0;
+}
+
+.nav-items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-items a {
+    flex: 1;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    text-shadow: 1px 1px rgba(0, 0, 0, .2);
+}
+
+.nav-items a:first-child {
+    border-bottom: 1px solid white;
+}
+
+.nav-items:first-child a {
+    border: 0;
+    background: url(../images/hotel.png) no-repeat bottom center;
+    background-size: 121px auto;
+}
+
+.nav-items:nth-child(-n+2) {
+    border-right: 1px solid white;
+}
+
+.nav-common:nth-child(1) {
+    background: -webkit-linear-gradient(left, #FA5A55, #FA994D);
+}
+
+.nav-common:nth-child(2) {
+    background: -webkit-linear-gradient(left, #4B90ED, #53BCED);
+}
+
+.nav-common:nth-child(3) {
+    background: -webkit-linear-gradient(left, #34C2A9, #6CD559);
+}
+
+.nav-bot {
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.nav-bot li {
+    flex: 20%;
+}
+
+.nav-bot a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-bot-icon {
+    width: 28px;
+    height: 28px;
+    margin-top: 4px;
+    background: url(../images/subnav-bg.png) no-repeat;
+    background-size: 28px auto;
+}
+
+
+/* 导航结束*/
+
+
+/* 销售开始 */
+
+.sales {
+    z-index: 950;
+    border-top: 1px solid #bbb;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 47px;
+}
+
+.sales-hd {
+    position: relative;
+    height: 44px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sales-hd h2 {
+    position: relative;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.sales-hd h2::after {
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    content: "";
+    width: 79px;
+    height: 15px;
+    background: url(../images/hot.png) no-repeat 0 -20px;
+    background-size: 79px auto;
+}
+
+.more {
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    background: -webkit-linear-gradient(left, #FF506C, #FF6BC6);
+    border-radius: 15px;
+    padding: 3px 20px 3px 10px;
+    color: #fff;
+}
+
+.more::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+}
+
+.row {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.row a {
+    flex: 1;
+}
+
+.row a:first-child {
+    border-right: 1px solid #ccc;
+}
+
+.row a img {
+    width: 100%;
+}
+
+
+/* 销售结束 */
+
+
+/* 底部开始 */
+
+.tabbar {
+    border-top: 1px solid #ccc;
+    position: fixed;
+    box-shadow: 0 -5px 15px 0 rgb(0 0 0 / 5%);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 49px;
+    background-color: #fff;
+    max-width: 540px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.tabbar a {
+    flex: 1;
+    font-size: 11px;
+    line-height: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabbar [class^="tabbar-icon"] {
+    width: 32px;
+    height: 32px;
+    background: url(../images/tabbar.png) no-repeat 0 0;
+    background-size: 32px auto;
+}
+
+.tabbar .tabbar-icon-i2 {
+    background-position: 0 -32px;
+}
+
+.tabbar .tabbar-icon-i3 {
+    background-position: 0 -64px;
+}
+
+.tabbar .tabbar-icon-i4 {
+    background-position: 0 -96px;
+}
+
+
+/* 底部结束 */
